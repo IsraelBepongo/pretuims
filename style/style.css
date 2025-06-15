@@ -1,5 +1,6 @@
 @import url('./css/footer.css');
 @import url('./css/produit.css');
+@import url('./css/categorie.css');
 *{
     margin: 0;
     padding: 0;

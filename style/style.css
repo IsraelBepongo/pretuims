@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+:root{
+    --constracte:#7F8E76;
+    --social-icon:#9EA898;
+}
+body{
+     font-family: 'Montserrat',serif;
+     overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.container  {
+    padding-inline: 16px;
+    margin-inline:auto;
+    width: 100%;
+    display: block;
+    max-width: 1220px;
+}

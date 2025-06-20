@@ -1,0 +1,191 @@
+.header{
+    padding: 34px 0;
+    img{
+        display: block;
+        width: 100%;
+    }
+   .header-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+   }
+    .header-buttons{
+        color: #F5FAF2;
+        font-weight: 600;
+        font-size: 1.125rem;
+        display: block;
+        line-height: 1.555;
+        border: 1px solid white;
+        padding: 12px 36px 18px 36px;
+        border-radius: 32px;
+        max-width: 273px;
+        text-wrap: nowrap;
+        transition: .8s;       
+        background: var(--constracte);
+    }
+    .header-buttons:hover{
+        background: transparent;
+    }
+    .header-title{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2.125rem;
+        line-height: 1.4117;
+        color: #ffff;
+        
+    }
+    .header-images{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header-header{
+        position: relative;
+
+    }
+   .header-images {
+        position: relative;
+   }
+   
+    .header-paragraphe{
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        left: 0;
+        height: 442px;
+        padding-inline: 27px 30px;
+    }
+    .header-image{
+        height: 100%;
+        border-radius: 20px;
+    }
+    .header-image-image{
+        height: 442px;
+        position: relative;
+        border-radius: 20px;
+    }
+    .header-image-image::before{
+        content: '';
+        position: absolute;
+        background: rgba(0, 0, 0, .4);
+        top: 0;
+         border-radius: 20px;
+        right: 0;
+        width: 100%;
+        display: block;
+        height: 442Px;
+        left: 0;
+    }
+   
+    
+
+
+    .header-text{
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.5625;
+        text-align: center;
+        color: #ffff;
+    }
+}
+@media only screen  and (max-width: 360px){
+   
+    .header{
+         .header-paragraphe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 442px;
+            padding-left: 27px;
+            padding-right: 32px;
+           
+        }
+
+        .header-buttons {
+          
+            font-size: 1rem;
+            line-height: 1.355;
+            border: 1px solid white;
+            padding: 12px 22px;
+            display: flex;
+            justify-content: center;
+            max-width: 300px;
+          
+        }
+         .header-title {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.325rem;
+            line-height: 1.4117;
+            color: #ffff;
+        }
+      
+    }
+}
+
+@media only screen  and (min-width: 800px){
+   
+    .header{
+            
+  .header-paragraphe {
+            position: absolute;
+            top: 0;
+            display: block;
+            left: 0;
+            padding: 100px 0px 0px 140px;
+            width: 630px;
+          
+           
+        }
+        .header-title {
+            text-align: left;
+           
+        }
+        .header-image{
+            border-radius: 40px;
+        }
+        .header-text{
+            text-align: left;
+        }
+        .header-button {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            margin-top: 32px;
+        }
+        .header-image{
+            height: 100%;
+        }
+        .header-image-image{
+            height: 523px;
+            border-radius: 400px;
+        }
+          .header-image-image::before{
+            height: 523px;
+            border-radius: 40px;
+
+          }
+    }
+    
+}
+@media only screen and  (max-width: 800Px) and (min-width:650px)  {
+  .header{
+       .header-paragraphe {
+        display: block;
+       
+        height: 442px;
+        padding-inline: 60px;
+        
+          
+  }
+  }
+}
+

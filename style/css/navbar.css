@@ -1,0 +1,215 @@
+.navbar{
+    .navbar-top{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+   .navbar-input{
+        display: none;
+   }
+    .navbar-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-bar  , .navbar-seacher{
+       border: 1px solid;
+       width: 44px;
+       height: 44px;
+       display: flex;
+       cursor: pointer;
+       align-items: center;
+       justify-content: center;
+       border-radius: 50px;     
+       border-color: #E7E7E7;
+    }
+    .open-menu{
+        .navbar-bar, .navbar-logo{
+            position: relative;
+            z-index: 10;
+        }
+        .navbar-items:last-child{
+            margin-bottom: 0;
+        }
+        .navbar-bottom-butom{
+            margin-top: 24px;
+        }
+        
+        .navbar-bottoms{
+            padding: 68px 0;
+            background: white;
+            width: 336px;
+            position: absolute;
+            top: 0;
+           
+            left: 0;
+            box-shadow: 0 1px 2px black;
+            padding-left: 30px;
+            padding-right: 100px;
+            z-index: 5;
+            border-radius: 0 20px 20px 0;
+        }
+
+    .navbar-bottoms::before{
+        content: '';
+        width: 100%;
+        height: 1px;
+        margin: 24px 0;
+        display: block;
+        background: #ECECEC;
+    }
+    }
+  
+    .navbar-items{
+        display: block;
+        margin-bottom: 1.75rem;
+        font-weight: normal;
+        font-size: 1rem;
+        color: #363636;
+
+        line-height: 1.5;
+
+
+    }
+  
+   
+  
+  
+    
+    .navbar-bottom-Vendez{
+        border:1px solid var(--constracte);
+        padding: 12px 36px;
+        
+        border-radius:  32px;
+        text-wrap: nowrap;
+        transition: .8s;
+        font-size: 1rem;
+        line-height: 1.75;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            
+            color: var(--constracte);
+        }
+    }
+   
+    .navbar-bottom-Vendez:hover, .navbar-bottom-connecter:hover{
+        background: var(--constracte);
+        a{
+            color: white;
+        }
+    }
+    .navbar-bottom-connecter{
+        margin-top: 20px;
+        border:1px solid var(--constracte);
+        padding: 12px 36px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        transition: .8s;
+        align-items: center;
+        border-radius:  32px;
+        a{
+            color: #545454;
+            font-size: 1rem;
+            text-wrap: nowrap;
+            line-height: 1.75;
+            font-weight: 600;
+        }
+
+    }
+
+    .navbar-bottom{
+        display: none;
+    }
+}
+
+@media only screen and  (min-width:760Px) {
+  .navbar{
+        .navbar-top{
+            position: relative;
+        }
+        
+        .navbar-bottom-line{
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+            justify-content: space-between;            
+        }
+        .navbar-bottom{
+            display: block;
+        }
+        .navbar-bar{
+            display: none;
+        }
+         .navbar-input{
+            display: block;
+        }
+        .navbar-top{
+            padding-bottom: 0;
+        }
+        .navbar-bottoms::before{
+            content: '';
+            width: 100%;
+            height: 1px;
+            margin: 24px 0;
+            display: block;
+            background: #ECECEC;
+    }
+        .navbar-items{
+            margin-bottom: 1.75rem;
+            font-weight: normal;
+            font-size: 1rem;
+            color: #363636;
+            line-height: 1.5;
+
+    }
+     .navbar-seacher{
+       border: 1px solid;
+       width: 50px;
+       height: 50px;
+       display: flex;
+       cursor: pointer;
+       align-items: center;
+       justify-content: center;
+       border-radius: 50px;     
+       border-color: #E7E7E7;
+    }
+  .navbar-input{
+            input{
+                background-color: #FCFCFC;
+                height: 64px;
+                border-color: #E0E0E0;
+                max-width: 500px;
+                width: 100%;
+                display: block;
+                padding: 16px 32px;
+                border-radius: 60px;
+                color: #6B6B6B;
+                line-height: 1.0625;
+            }
+            
+
+  }
+
+  .navbar-seacher{
+    display: none;
+  }
+  .navbar-bottom-butom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 10px;
+  }
+   .navbar-bottom-connecter{
+        margin-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;        
+   }
+   .navbar-bottom-Vendez{
+        padding: 12px 20px;
+        
+    }
+  }
+}

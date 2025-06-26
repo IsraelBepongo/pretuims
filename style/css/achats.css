@@ -1,0 +1,195 @@
+.achats{
+   .article-achats-image-img{
+        display: block;
+        width: 100%;
+        border-radius: 32px;
+        height: 358px;
+   }
+   .achat-achat{
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+   }
+   .article-achats{
+        flex: 0 0 100%;
+   }
+    .achat-achats{
+         background-color: #F5FAF2;
+         padding: 30px 20px;
+         border-radius: 20px;
+    }
+    .article-achats-image{
+        position: relative;
+    }
+    .article-achats-coeur{
+        top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 40Px;
+        height: 40Px;
+        top: 16px;
+        right:  16px;
+        background: rgba(255,255,255,0.35);
+        position: absolute;
+        img{
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .achat-achats-title{
+        text-align: center;
+        text-wrap: nowrap;
+        color: #101010;
+        font-size: 1.75rem;
+        margin-bottom: 30px;
+        line-height: 1.428;
+        font-weight: bold;
+    }
+    .achat-achats-fleche{
+        display: none;
+    }
+    .article-achats-price{
+        color: #00A3A4;
+        text-wrap: nowrap;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.258;
+        text-align: right;
+    }
+    .article-achats-paragraphe{
+        font-weight: bold;
+        line-height: 1.333;
+        color: #ffff;
+        text-align: left;
+        max-width: 244px;
+        font-size: 1.125rem;
+    }
+    .article-achats-location-text{
+        text-wrap: nowrap;
+        font-size: .82rem;
+        color: #ffff;
+        font-weight: 500;
+    }
+    .article-achats{
+        position: relative;
+    }
+    .article-achats-image{
+        position: relative;
+    }
+    .article-achats-image::before{
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        border-radius: 32px;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.51) 69%);
+    }
+    .article-achats-text-text{
+        padding: 0 22px;
+        top: 207px;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+    .article-achats-location{
+        background: rgba(255, 255, 255, 0.233);
+        padding: 6px 12px;
+        border-radius: 111px;
+        width: 138px;
+        margin-bottom: 15px;
+        
+        .article-achats-location-dflex{
+            display: flex;
+            align-items: center;
+            gap: 0 5px;
+    }
+    }
+   
+}
+@media only screen and  (max-width: 800Px) and (min-width:500px)  {
+
+   .achats{
+        .article-achats-image-img{
+            display: block;
+            width: 100%;
+            border-radius: 32px;   
+      
+   }
+        .achat-achat{
+            display: flex;
+            align-items: center;
+            justify-content:left;
+            gap: 0 12px;
+        }
+   .article-achats-text-dflex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }  
+   .article-achats{
+        flex: none;
+   }
+    }
+}
+@media only screen and  (min-width: 801Px)  {
+
+    .achats{
+        .article-achats-text-text{
+            padding: 0 22px;
+            top: 285px;
+            left: 0;
+            right: 0;
+            position: absolute;
+    }
+        .achat-achat{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 0 12px;
+        }
+        .article-achats-image-img{
+            display: block;
+            width: 100%;
+            border-radius: 32px;
+            height: 420px;
+        
+   }
+   .article-achats{
+        flex: none;
+   }
+   .achat-achats-title{
+        text-align: left;
+   }
+   .achat-achats-fleche{
+        display: flex;
+        gap: 0 12px;
+   }
+   .achat-achats-fleches{
+        display: flex;
+        justify-content: space-between;
+   }
+   .achat-achats-fleche-left , .achat-achats-fleche-right{
+        background: white;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40pX;
+        cursor: pointer;
+   }
+   .achat-achats-fleche-left{
+        transform: rotate(180deg);
+   }
+    }
+    .article-achats-text-dflex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}

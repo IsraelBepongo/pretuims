@@ -10,17 +10,20 @@
 *{
     margin: 0;
     padding: 0;
-    
     box-sizing: border-box;
+     
+}
+html{
+      overflow-x: hidden;
 }
 :root{
     --constracte:#7F8E76;
     --social-icon:#9EA898;
-    --container: 1220px;
+    --container: 1200px;
 }
 body{
      font-family: 'Montserrat',serif;
-     overflow-x: hidden;
+  
 }
 a{
     text-decoration: none;
@@ -30,7 +33,7 @@ a{
     margin-inline:auto;
     width: 100%;
     display: block;
-    max-width: 1100px;
+    max-width:var(--container);
 }
 .container-lg{
       padding-inline: 16px;

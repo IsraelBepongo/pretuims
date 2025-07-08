@@ -1,15 +1,55 @@
+
 .navbar{
+
+  
+   
     .navbar-top{
         padding-top: 20px;
         padding-bottom: 30px;
     }
-   .navbar-input{
+    .navbar-input-img{
         display: none;
+    }
+   .open-input{
+    .navbar-bar{
+        display: none;
+    }
+    .navbar-logo{
+        display: none;
+    }
+   .navbar-seacher{
+    top: 5px;
+    right: 0px;
+   
+    border: none;
+    position: absolute;
+   }
+    .navbar-input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 1000px;
+
+    .navbar-input-img{
+        display: block;
+        font-size: .8125rem;
+        border: 1px solid #7F8E76;
+        border-radius: 60px;
+       
+        width: 100%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 20px;
+        color: #6B6B6B;
+        line-height: 1.538rem;
+    }
+   }
    }
     .navbar-top{
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        gap:0 10px;
     }
     .navbar-bar  , .navbar-seacher{
        border: 1px solid;
@@ -22,11 +62,26 @@
        border-radius: 50px;     
        border-color: #E7E7E7;
     }
+
+    .navbar-bottom-butom{
+        display: none;
+    }
     .open-menu{
+        .navbar-bottom-butom{
+            position: absolute;
+            display: block;
+            z-index: 10;
+          
+            top:  640px;
+        }
         .navbar-bar, .navbar-logo{
             position: relative;
             z-index: 10;
         }
+        .navbar-bottom{
+            display: block;
+        }
+        
         .navbar-items:last-child{
             margin-bottom: 0;
         }
@@ -38,9 +93,9 @@
             padding: 68px 0;
             background: white;
             width: 336px;
+            height: 844px;
             position: absolute;
             top: 0;
-           
             left: 0;
             box-shadow: 0 1px 2px black;
             padding-left: 30px;
@@ -51,12 +106,14 @@
 
     .navbar-bottoms::before{
         content: '';
-        width: 100%;
+        width: 300px;
         height: 1px;
         margin: 24px 0;
         display: block;
         background: #ECECEC;
     }
+    
+
     }
   
     .navbar-items{
@@ -78,7 +135,7 @@
     .navbar-bottom-Vendez{
         border:1px solid var(--constracte);
         padding: 12px 36px;
-        
+        cursor: pointer;
         border-radius:  32px;
         text-wrap: nowrap;
         transition: .8s;
@@ -125,10 +182,14 @@
     }
 }
 
-@media only screen and  (min-width:760Px) {
+@media only screen and  (min-width:950Px) {
+    .navbar-input{
+        position: relative;
+    }
   .navbar{
         .navbar-top{
             position: relative;
+            align-items: center;
         }
         
         .navbar-bottom-line{
@@ -144,6 +205,7 @@
             display: none;
         }
          .navbar-input{
+            width: 606px;
             display: block;
         }
         .navbar-top{
@@ -177,12 +239,13 @@
        border-color: #E7E7E7;
     }
   .navbar-input{
-            input{
+     
+        .navbar-input-img{
                 background-color: #FCFCFC;
                 height: 64px;
                 border-color: #E0E0E0;
-                max-width: 500px;
                 width: 100%;
+                font-size: 1rem;
                 display: block;
                 padding: 16px 32px;
                 border-radius: 60px;
@@ -194,7 +257,15 @@
   }
 
   .navbar-seacher{
-    display: none;
+        position: absolute;
+        top: 7px;
+        bottom: 7px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-color: #EEEEEE;
+        right: 7px;
   }
   .navbar-bottom-butom{
         display: flex;
@@ -212,4 +283,18 @@
         
     }
   }
+
+  
 }
+
+    @keyframes identifier {
+        0%{
+            opacity: 0;
+           
+            width: 10px;
+        }
+        100%{
+            opacity: 1;
+             width: 209px;
+        }
+    }

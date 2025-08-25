@@ -7,19 +7,25 @@
    }
    .achat-achat{
         display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 0 12px;
+        overflow: hidden;
+        position: relative;
    }
+   
    .article-achats{
-        flex: 0 0 100%;
+        flex: 0 0 270px;
+        position: absolute;
    }
     .achat-achats{
          background-color: #F5FAF2;
-         padding: 30px 20px;
+         padding: 30px 0px 30px 20px;
          border-radius: 20px;
     }
     .article-achats-image{
         position: relative;
+      
     }
     .article-achats-coeur{
         top: 70px;
@@ -119,6 +125,12 @@
             border-radius: 32px;   
       
    }
+
+      .achat-achats{
+         background-color: #F5FAF2;
+         padding: 30px 20px;
+         border-radius: 20px;
+    }
         .achat-achat{
             display: flex;
             align-items: center;
@@ -144,6 +156,11 @@
             left: 0;
             right: 0;
             position: absolute;
+    }
+       .achat-achats{
+         background-color: #F5FAF2;
+         padding: 30px  20px;
+         border-radius: 20px;
     }
         .achat-achat{
             display: flex;

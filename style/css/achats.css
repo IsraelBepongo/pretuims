@@ -128,7 +128,7 @@
 
       .achat-achats{
          background-color: #F5FAF2;
-         padding: 30px 20px;
+         padding: 30px  0 30PX 20px;
          border-radius: 20px;
     }
         .achat-achat{
@@ -159,7 +159,7 @@
     }
        .achat-achats{
          background-color: #F5FAF2;
-         padding: 30px  20px;
+        padding: 30px  0 30PX 20px;
          border-radius: 20px;
     }
         .achat-achat{
@@ -209,4 +209,19 @@
         align-items: center;
     }
     
+}
+
+@media only screen and  (min-width: 1178Px)  {
+  .achats{
+
+       .achat-achat{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+   }
+    .achat-achats{
+        padding: 30px   20px;
+    }
+  }
+
 }
